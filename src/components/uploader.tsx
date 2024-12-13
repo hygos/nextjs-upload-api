@@ -70,9 +70,8 @@ export default function Uploader() {
 
   function handleFileChange(file: File) {
     toast.dismiss()
-
-    if (file.type.split('/')[0] !== 'image') {
-      toast.error('We only accept image files')
+    if (file.type.split('/')[0] !== 'text') {
+      toast.error('We only accept text files')
       return
     }
 
